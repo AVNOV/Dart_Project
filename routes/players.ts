@@ -4,7 +4,7 @@ class Players {
 
   get(server: FastifyInstance) {
     server.get('/players', async (request, reply) => {
-      return 'players\n';
+      reply.send('players\n');
     })
   }
 
@@ -16,7 +16,7 @@ class Players {
 
   post(server: FastifyInstance) {
     server.post('/players', async (request, reply) => {
-      return 'Post players\n';
+      reply.send('Post players\n');
     })
   }
 
@@ -31,7 +31,6 @@ class Players {
       reply.send(request.params)
     })
   }
-
 }
 
 export { Players }
