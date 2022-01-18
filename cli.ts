@@ -11,6 +11,16 @@ const rl = readline.createInterface({
 
 rl.question(`Entrez le nom des joueurs avec des "," entre chaque nom :\n`, function (name: string) {
   let names = name.split(',')
+  for (let i = 0; i < names.length; i++) {
+    names[i] = names[i].trim()
+    if (names[i] == "") {
+      names.splice(i)
+    }
+  }
+  if (names.length < 2) {
+    console.log("Vous devez être au moins 2 joueurs pour jouer !")
+    rl.close()
+  }
   rl.question('Veuillez choisir le mode de jeu : \n 1. Le 301 \n 2. Le tour du Monde \n 3. Le Cricket\n', function (number: string) {
     switch (number) {
       case '1':

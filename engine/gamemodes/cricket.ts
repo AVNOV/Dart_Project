@@ -41,7 +41,7 @@ class Cricket extends GameMode {
 
   public start() {
     this.setStatus("start")
-
+    
   }
 }
 

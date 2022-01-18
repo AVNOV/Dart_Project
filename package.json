@@ -13,7 +13,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "fastify": "^3.23.1"
+        "fastify": "^3.23.1",
+        "sqlite3": "^5.0.2"
     },
     "devDependencies": {
         "@types/node": "^16.11.7",

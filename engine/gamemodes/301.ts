@@ -37,6 +37,12 @@ class Game301 extends GameMode {
   setPlayers(players: Array<string>) {
     this.currentPlayers = players
   }
+
+  public start() {
+    this.setStatus("start")
+    
+  }
+  
 }
 
 export { Game301 }
