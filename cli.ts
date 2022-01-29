@@ -26,6 +26,7 @@ rl.question(`Entrez le nom des joueurs avec des "," entre chaque nom :\n`, funct
       case '1':
         const game301 = new Game301(1, Date.now(), names)
         console.log(`Vous avez choisi le jeu : ${game301.getName()}`)
+        game301.start(names)
         break;
       case '2':
         const aroundtheworld = new AroundTheWorld(1, Date.now(), names)
