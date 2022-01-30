@@ -13,7 +13,10 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "fastify": "^3.23.1"
+        "@types/jquery": "^3.5.13",
+        "fastify": "^3.23.1",
+        "jquery": "^3.6.0",
+        "sqlite3": "^5.0.2"
     },
     "devDependencies": {
         "@types/node": "^16.11.7",
